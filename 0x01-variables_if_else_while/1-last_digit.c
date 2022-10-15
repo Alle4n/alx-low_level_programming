@@ -23,7 +23,7 @@ int main(void)
 	{
 		printf("and is zero\n");
 	}
-	else if (x < 6 && x!=0)
+	else if (x < 6)
 	{
 		printf("and is less than 6 and not 0\n");
 	}
