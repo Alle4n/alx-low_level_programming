@@ -16,7 +16,7 @@ int main(void)
 			{
 				for (d = 0; d < 10; d++)
 				{
-					if (!((a == b) && (b == d) && (d == c)))
+					if (!((a == b) && (b == c) && (c == d)))
 					{
 						putchar(48 + a);
 						putchar(48 + b);
