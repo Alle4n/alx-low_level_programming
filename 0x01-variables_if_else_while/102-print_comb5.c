@@ -19,7 +19,7 @@ int main(void)
 					if (!((a == b) && (b == d) && (d == c)))
 					{
 						putchar(48 + a);
-						putchar(48 + x);
+						putchar(48 + b);
 						putchar(' ');
 						putchar(48 + c);
 						putchar(48 + d);
@@ -30,6 +30,6 @@ int main(void)
 			}
 		}
 	}
-	Putchar('\n');
+	putchar('\n');
 	return (0);
 }
