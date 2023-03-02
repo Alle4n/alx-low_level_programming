@@ -4,26 +4,25 @@
  * *_strcat - concatenates two strings.
  * @dest: pointer to destination char
  * @src: pointer to source char
- * @n: number of bytes to receive
  *
  * Return: char
  */
 
 char *_strcat(char *dest, char *src)
 {
-	unsigned int i = 0;
-	int j = 0;
+	int dlen = 0, i;
 
-	while (*(dest + i) != '\0')
-		i++;
-	while (*(src + j) != '\0')
+	while (dest[dlen])
 	{
-		if (j < n)
-		{
-			*(dest + i) = *(src + j);
-			i++;
-		}
-		j++;
+		dlen++;
 	}
+
+	for (i = 0; src[i] != 0; i++)
+	{
+		dest[dlen] = src[i];
+		dlen++;
+	}
+
+	dest[dlen] = '\0';
 	return (dest);
 }
